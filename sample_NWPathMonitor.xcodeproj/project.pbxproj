@@ -11,6 +11,7 @@
 		DC714D8E29F40D6900C877BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC714D8D29F40D6900C877BD /* ContentView.swift */; };
 		DC714D9029F40D6B00C877BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC714D8F29F40D6B00C877BD /* Assets.xcassets */; };
 		DC714D9329F40D6B00C877BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC714D9229F40D6B00C877BD /* Preview Assets.xcassets */; };
+		DC714D9A29F40F2600C877BD /* MonitoringNetworkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC714D9929F40F2600C877BD /* MonitoringNetworkState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DC714D8D29F40D6900C877BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DC714D8F29F40D6B00C877BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC714D9229F40D6B00C877BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DC714D9929F40F2600C877BD /* MonitoringNetworkState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringNetworkState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				DC714D8D29F40D6900C877BD /* ContentView.swift */,
 				DC714D8F29F40D6B00C877BD /* Assets.xcassets */,
 				DC714D9129F40D6B00C877BD /* Preview Content */,
+				DC714D9929F40F2600C877BD /* MonitoringNetworkState.swift */,
 			);
 			path = sample_NWPathMonitor;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			files = (
 				DC714D8E29F40D6900C877BD /* ContentView.swift in Sources */,
 				DC714D8C29F40D6800C877BD /* sample_NWPathMonitorApp.swift in Sources */,
+				DC714D9A29F40F2600C877BD /* MonitoringNetworkState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

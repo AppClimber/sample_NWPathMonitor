@@ -11,7 +11,11 @@ import SwiftUI
 struct sample_NWPathMonitorApp: App {
     var body: some Scene {
         WindowGroup {
+            // ContentViewでEnvironmentObjectを使用しているので，
+            // ContentView呼び出し時にenvironmentのModifierを使用し，MonitoringNetworkStateを渡す．
+            // サブ階層にObservableObjectを提供するために必要
             ContentView()
+                .environmentObject(MonitoringNetworkState())
         }
     }
 }

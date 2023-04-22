@@ -8,7 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // ObservableObjectのMonitoringNetworkStateをEnvironmentObjectとして定義する
+    @EnvironmentObject var networkState: MonitoringNetworkState
+    
     var body: some View {
+        
+        ZStack {
+            Rectangle()
+                .fill(networkState.isConnected ? .blue : .black)
+            
+            Text(networkState.isConnected ? "Network Connected." : "Network Disconnected")
+                .foregroundColor(.white)
+        }
+        
+        /*
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
@@ -16,6 +30,7 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+         */
     }
 }
 
