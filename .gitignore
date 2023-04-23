@@ -1,0 +1,17 @@
+# .gitignore
+
+## Mac OS X
+.DS_Store
+
+## Xcode build files
+build/
+DerivedData/
+
+## Xcode setting
+
+## Library
+Pods/*
+Carthage/Build/
+
+## Other
+xcuserdata/
