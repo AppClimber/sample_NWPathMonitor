@@ -16,7 +16,9 @@ import Network
 class MonitoringNetworkState: ObservableObject {
     
     private let monitor = NWPathMonitor()
-    
+    // private let monitor = NWPathMonitor(requiredInterfaceType: .wifi) // モニタリングするIF_Type
+    // private let monitor = NWPathMonitor(prohibitedInterfaceTypes: [.wifi]) // 除外するIF_Type
+
     // パス配信をするイベントキュー
     private let queue = DispatchQueue.global(qos: .background)
     
@@ -31,7 +33,7 @@ class MonitoringNetworkState: ObservableObject {
         // アップデート時のハンドラ
         monitor.pathUpdateHandler = { path in
             
-            // self.printNWPathParams(path)
+            self.printNWPathParams(path)
             
             if path.status == .satisfied {
                 
